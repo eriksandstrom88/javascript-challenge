@@ -998,3 +998,13 @@ var data = [{
     comments: "Bright orange object&#44 rapid speed and direction changes .."
   }
 ];
+
+var bodybodybody=d3.select("tbody");
+
+data.forEach((ufo_sighting)=>{
+  var rowrowrow=bodybodybody.append('tr');
+  Object.entries(ufo_sighting).forEach(([key, value]) => {
+    rowrowrow.append('td').text(value);
+})});
+
+var dateEntered=d3.select('.datetime')
